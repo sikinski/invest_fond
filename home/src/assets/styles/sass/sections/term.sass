@@ -9,19 +9,9 @@
             padding-left: 45px
             .h2
                 grid-area: h2
-                width: fit-content
                 margin: 0 auto
-                font-size: 32px
-                line-height: 56px
                 padding: 21px 0
             .text-container
-                display: flex
-                justify-content: center
-                align-items: center
-                backdrop-filter: blur(42px)
-                border-radius: 16px
-                border: 1px solid linear-gradient(152.97deg, rgba(255, 255, 255, 0.028) 0%, rgba(255, 255, 255, 0) 100%)
-                border: 0.5px solid white
                 height: 208px
                 .text
                     font-family: 'Montserrat'
@@ -29,7 +19,6 @@
                     font-weight: 300
                     font-size: 18px
                     line-height: 30px
-                    padding: 0 24px 0 33px
             .text-container-1
                 grid-area: text-1
                 margin-bottom: 34px
@@ -43,3 +32,84 @@
                 .section-image
                     margin-right: -15%
                     object-fit: contain
+// @media (max-width: $breakpoint-large-pc)
+@media (max-width: $breakpoint-middle-pc)
+    .main
+        .term
+            padding: 62px 0
+            .inner-block
+                padding-left: 28px
+                grid-template-rows: 90px 1fr 1fr
+                .text-container
+                    height: 230px
+                    .text
+                        font-size: 16px
+                        line-height: 26px
+                .text-container-1
+                    margin-bottom: 28px
+                .section-image-container
+                    .section-image
+                        height: 70%
+@media (max-width: $breakpoint-small-pc)
+    .main
+        .term
+            padding: 62px 0
+            .inner-block
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                padding-left: 0
+                .section-image-container
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    margin: 24px 0
+                    .section-image
+                        max-width: 80%
+                        margin: 0 auto
+                        margin-right: 0
+                .text-container
+                    height: 270px
+                    .text
+                        font-size: 24px
+                        line-height: 28px
+                .text-container-1
+                    margin-top: 46px
+                    margin-bottom: 24px
+@media (max-width: $breakpoint-tablet)
+    .main
+        .term
+            padding: 62px 0
+            .inner-block
+                padding-left: 0
+                padding-right: 0
+                .text-container
+                    height: 270px
+                    .text
+                        font-size: 18px
+                        line-height: 20px
+                .text-container-1
+                    margin-top: 46px
+                    margin-bottom: 24px
+@media (max-width: $breakpoint-mobile-large)
+    .main
+        .term
+            padding: 32px 0
+            .inner-block
+                .section-image-container
+                    max-width: 60%
+                    .section-image
+                        max-width: 100%
+                .text-container
+                    height: 204px
+                    padding: 13px
+                    height: auto
+                    margin: 0 9px 0 5px
+                    .text
+                        font-size: 15px
+                        line-height: 25px
+                .text-container-1
+                    margin-top: 46px
+                    margin-bottom: 24px
+// @media (min-width: $breakpoint-mobile-small) and (max-width: $breakpoint-mobile-large - 10px)

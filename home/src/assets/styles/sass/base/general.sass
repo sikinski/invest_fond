@@ -6,6 +6,7 @@ body
 .text-lines
     display: block
     position: relative
+    width: fit-content
     &::before
         content: ' '
         display: block
@@ -24,3 +25,49 @@ body
         width: 50px
         height: 1px
         top: 50%
+.text-container
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 16px
+    background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%)
+    backdrop-filter: blur(42px)
+    border-radius: 16px
+    padding: 1px
+    @supports (border-image-slice: 1)
+        border-width: 1px
+        border-style: solid
+        border-image: linear-gradient(152.97deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%)
+        border-image-slice: 1
+    @supports (-webkit-background-clip: text)
+        background-image: linear-gradient(152.97deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: white
+        padding: 0 24px 0 33px
+.hidden
+    display: none
+// @media (max-width: $breakpoint-large-pc)
+@media (max-width: $breakpoint-middle-pc)
+    .inner-block
+        max-width: 100%
+        padding: 0 70px
+    .text-lines
+        &::before
+            left: -60px
+        &::after
+            right: -60px
+@media (max-width: $breakpoint-small-pc)
+    .inner-block
+        max-width: 100%
+        padding: 0 60px
+@media (max-width: $breakpoint-mobile-large)
+    .inner-block
+        max-width: 100%
+        padding: 0 20px
+        .text-lines
+            &::before
+                width: 30px
+                left: -35px
+            &::after
+                width: 30px
+                right: -35px

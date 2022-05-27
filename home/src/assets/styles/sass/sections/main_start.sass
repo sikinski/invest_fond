@@ -1,6 +1,7 @@
 .main
     background-image: url(/src/assets/images/start_bg.png)
     background-repeat: no-repeat
+    background-position: center
     background-size: cover
     height: 100vh
     .inner-block
@@ -11,6 +12,7 @@
             align-items: center
             .h1
                 padding-top: 136px + 58px // 58 is header's height
+                max-width: 80%
                 .colorful-text
                     font-family: 'Poppins'
             .space-div
@@ -24,3 +26,49 @@
                     height: 61px
                     background-image: url(/src/assets/images/icons/mouse_down.svg)
                     margin: 27px
+                    background-size: contain
+                    background-repeat: no-repeat
+@media (max-width: $breakpoint-large-pc)
+    .main
+        .inner-block
+            .start
+                .h1
+                    padding-top: 166px
+@media (max-width: $breakpoint-small-pc)
+    .main
+        .inner-block
+            .start
+                .h1
+                    padding-top: 146px
+                    max-width: 96%
+                .space-div
+                    .mouse-down
+                        width: 34px
+                        height: 56px
+                        margin: 22px
+@media (max-width: $breakpoint-tablet)
+    .main
+        .inner-block
+            .start
+                .h1
+                    padding-top: 126px
+                    max-width: 80%
+@media (max-width: $breakpoint-mobile-large)
+    .main
+        .inner-block
+            .start
+                .h1
+                    padding-top: 107px
+                    max-width: 75%
+                .space-div
+                    .mouse-down
+                        width: 28px
+                        height: 44px
+                        margin: 46px
+@media (max-width: 350px)
+    .main
+        .inner-block
+            .start
+                .h1
+                    padding-top: 107px
+                    max-width: 87%
