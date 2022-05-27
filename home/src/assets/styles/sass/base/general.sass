@@ -1,0 +1,26 @@
+body
+    background-color: #040b1d
+.inner-block
+    max-width: 1097px
+    margin: 0 auto
+.text-lines
+    display: block
+    position: relative
+    &::before
+        content: ' '
+        display: block
+        background-color: $investGreen
+        position: absolute
+        width: 50px
+        height: 1px
+        left: -25%
+        top: 50%
+    &::after
+        content: ' '
+        display: block
+        position: absolute
+        background-color: $investGreen
+        right: -25%
+        width: 50px
+        height: 1px
+        top: 50%

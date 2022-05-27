@@ -1,0 +1,324 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+img {
+  display: block;
+}
+
+body, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: none;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+button:focus {
+  outline: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+select:focus {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input, select, textarea {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(/src/assets/fonts/Montserrat/Montserrat-ExtraBold.ttf);
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(/src/assets/fonts/Montserrat/Montserrat-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(/src/assets/fonts/Montserrat/Montserrat-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(/src/assets/fonts/Montserrat/Montserrat-Light.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(/src/assets/fonts/Open_Sans/OpenSans-ExtraBold.ttf);
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(/src/assets/fonts/Open_Sans/OpenSans-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(/src/assets/fonts/Open_Sans/OpenSans-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(/src/assets/fonts/Open_Sans/OpenSans-Light.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/src/assets/fonts/Poppins/Poppins-ExtraBold.ttf);
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/src/assets/fonts/Poppins/Poppins-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/src/assets/fonts/Poppins/Poppins-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/src/assets/fonts/Poppins/Poppins-Light.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+body {
+  font-family: "Open Sans";
+}
+
+.h1 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 56px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.h2, .h3, .h4, .h5, .h6 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.colorful-text {
+  color: #00EAC3;
+  text-transform: uppercase;
+}
+
+a, p, h1, h2, h3, h4, h5, h6 {
+  color: white;
+}
+
+body {
+  background-color: #040b1d;
+}
+
+.inner-block {
+  max-width: 1097px;
+  margin: 0 auto;
+}
+
+.text-lines {
+  display: block;
+  position: relative;
+}
+.text-lines::before {
+  content: " ";
+  display: block;
+  background-color: #00EAC3;
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  left: -25%;
+  top: 50%;
+}
+.text-lines::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  background-color: #00EAC3;
+  right: -25%;
+  width: 50px;
+  height: 1px;
+  top: 50%;
+}
+
+.header {
+  position: absolute;
+  height: 58px;
+  padding: 10px 0;
+  width: 100%;
+}
+.header .inner-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header .inner-block .nav {
+  font-family: "Open Sans";
+  font-style: normal;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.header .inner-block .nav .nav-item {
+  margin: 0 15px;
+  text-transform: uppercase;
+}
+.header .inner-block .nav .nav-item:hover {
+  color: #00EAC3;
+}
+.header .inner-block .nav .nav-item_active {
+  color: #00EAC3;
+  font-weight: 800;
+}
+
+.main {
+  background-image: url(/src/assets/images/start_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.main .inner-block .start {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+}
+.main .inner-block .start .h1 {
+  padding-top: 194px;
+}
+.main .inner-block .start .h1 .colorful-text {
+  font-family: "Poppins";
+}
+.main .inner-block .start .space-div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex: 1;
+}
+.main .inner-block .start .space-div .mouse-down {
+  width: 40px;
+  height: 61px;
+  background-image: url(/src/assets/images/icons/mouse_down.svg);
+  margin: 27px;
+}
+
+.main .term {
+  padding: 89px 0;
+}
+.main .term .inner-block {
+  display: grid;
+  grid-template-columns: 55% 1fr;
+  grid-template-rows: 110px 1fr 1fr;
+  grid-template-areas: "h2 pic" "text-1 pic" "text-2 pic";
+  padding-left: 45px;
+}
+.main .term .inner-block .h2 {
+  grid-area: h2;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 32px;
+  line-height: 56px;
+  padding: 21px 0;
+}
+.main .term .inner-block .text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(42px);
+  border-radius: 16px;
+  border: 1px solid linear-gradient(152.97deg, rgba(255, 255, 255, 0.028) 0%, rgba(255, 255, 255, 0) 100%);
+  border: 0.5px solid white;
+  height: 208px;
+}
+.main .term .inner-block .text-container .text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 0 24px 0 33px;
+}
+.main .term .inner-block .text-container-1 {
+  grid-area: text-1;
+  margin-bottom: 34px;
+}
+.main .term .inner-block .text-container-2 {
+  grid-area: text-2;
+}
+.main .term .inner-block .section-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: pic;
+}
+.main .term .inner-block .section-image-container .section-image {
+  margin-right: -15%;
+  object-fit: contain;
+}
+
+/*# sourceMappingURL=index.css.map */
