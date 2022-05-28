@@ -25,25 +25,57 @@ body
         width: 50px
         height: 1px
         top: 50%
-.text-container
+// .text-container, .icon-wrapper
+//     display: flex
+//     justify-content: center
+//     align-items: center
+//     background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%)
+//     backdrop-filter: blur(42px)
+//     border-radius: 16px
+//     padding: 1px
+//     @supports (border-image-slice: 1)
+//         border-width: 1px
+//         border-style: solid
+//         border-image: linear-gradient(152.97deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%)
+//         border-image-slice: 1
+//     @supports (-webkit-background-clip: text)
+//         background-image: linear-gradient(152.97deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%)
+//         -webkit-background-clip: text
+//         -webkit-text-fill-color: white
+//         padding: 0 24px 0 33px
+.text-container, .icon-wrapper
     display: flex
     justify-content: center
     align-items: center
-    border-radius: 16px
-    background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%)
-    backdrop-filter: blur(42px)
-    border-radius: 16px
-    padding: 1px
-    @supports (border-image-slice: 1)
-        border-width: 1px
-        border-style: solid
-        border-image: linear-gradient(152.97deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%)
-        border-image-slice: 1
-    @supports (-webkit-background-clip: text)
-        background-image: linear-gradient(152.97deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%)
-        -webkit-background-clip: text
-        -webkit-text-fill-color: white
-        padding: 0 24px 0 33px
+    padding: 10px
+    .module
+        display: flex
+        align-items: center
+        position: relative
+        border: 0
+        background-color: transparent
+        padding: 0 28px
+        &::before
+            content: ""
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            border-radius: 16px
+            padding: 1px
+            background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%)
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)
+            -webkit-mask-composite: source-out
+            mask-composite: exclude
+            background-size: 400% 400%
+        .text
+            font-family: 'Montserrat'
+            font-style: normal
+            font-weight: 300
+            font-size: 18px
+            line-height: 30px
+
 .hidden
     display: none
 // @media (max-width: $breakpoint-large-pc)
@@ -51,11 +83,16 @@ body
     .inner-block
         max-width: 100%
         padding: 0 70px
-    .text-lines
-        &::before
-            left: -60px
-        &::after
-            right: -60px
+        .text-container
+            .module
+                .text
+                    font-size: 16px
+                    line-height: 26px
+        .text-lines
+            &::before
+                left: -60px
+            &::after
+                right: -60px
 @media (max-width: $breakpoint-small-pc)
     .inner-block
         max-width: 100%
@@ -64,6 +101,11 @@ body
     .inner-block
         max-width: 100%
         padding: 0 20px
+        .text-container
+            .module
+                .text
+                    font-size: 24px
+                    line-height: 28px
         .text-lines
             &::before
                 width: 30px
@@ -71,3 +113,22 @@ body
             &::after
                 width: 30px
                 right: -35px
+@media (max-width: $breakpoint-tablet)
+    .main
+        .term
+            .inner-block
+                .text-container
+                    .module
+                        .text
+                            font-size: 18px
+                            line-height: 20px
+                            
+@media (max-width: $breakpoint-mobile-large)
+    .main
+        .term
+            .inner-block
+                .text-container
+                    .module
+                        .text
+                            font-size: 15px
+                            line-height: 25px
