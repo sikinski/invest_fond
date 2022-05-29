@@ -14,14 +14,14 @@ body
         position: absolute
         width: 50px
         height: 1px
-        left: -25%
+        left: -60px
         top: 50%
     &::after
         content: ' '
         display: block
         position: absolute
         background-color: $investGreen
-        right: -25%
+        right: -60px
         width: 50px
         height: 1px
         top: 50%
@@ -76,6 +76,65 @@ body
             font-size: 18px
             line-height: 30px
 
+// green text container
+.action-text-container
+    display: flex
+    justify-content: center
+    align-items: center
+    .module
+        display: flex
+        align-items: center
+        position: relative
+        border: 0
+        background-color: transparent
+        &::before
+            content: ""
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            border-radius: 25px
+            padding: 1px
+            border: 1px solid
+            background: linear-gradient(95.02deg, #118975 6.4%, rgba(0, 234, 195, 0) 110.99%)
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)
+            -webkit-mask-composite: source-out
+            mask-composite: exclude
+            background-size: 400% 400%
+        .text
+            font-family: 'Montserrat'
+            font-style: normal
+            font-weight: 300
+            font-size: 16px
+            line-height: 20px
+
+// green circles
+.number-block
+    display: flex
+    justify-content: center
+    align-items: center
+    .module
+        display: flex
+        align-items: center
+        position: relative
+        border: 0
+        background-color: transparent
+        &::before
+            content: ""
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            border-radius: 50%
+            padding: 1px
+            border: 1px solid
+            background: linear-gradient(131.21deg, #0B8570 -35.69%, #00EAC3 143.27%)
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)
+            -webkit-mask-composite: source-out
+            mask-composite: exclude
+            background-size: 400% 400%
 .hidden
     display: none
 // @media (max-width: $breakpoint-large-pc)
@@ -120,7 +179,7 @@ body
                 .text
                     font-size: 18px
                     line-height: 20px
-                            
+
 @media (max-width: $breakpoint-mobile-large)
     .inner-block
         .text-container

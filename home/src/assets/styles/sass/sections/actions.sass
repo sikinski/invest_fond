@@ -1,0 +1,86 @@
+.action
+    padding: 97px 0
+    .inner-block
+        display: flex
+        flex-direction: column
+        align-items: center
+        .content
+            display: grid
+            grid-template-columns: 40% auto 39.5%
+            grid-template-rows: 70% auto 80%
+            grid-gap: 0
+            grid-template-areas: 'action-1 number-1 action-2' 'button button button' 'action-3 number-2 action-4'
+            .button-container
+                grid-area: button
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 100%
+                margin: 0 auto
+                .button-disabled
+                    color: #ffffff
+                    height: 60px
+                    width: 150%
+                    max-width: 290px
+                    border: 1px solid #00EAC3
+                    background: linear-gradient(96.44deg, #117867 7.69%, #00EAC3 112.01%)
+                    border-radius: 35px
+                    font-weight: 700
+                    font-size: 16px
+                    line-height: 20px
+
+            .action-text-container
+                .module
+                    padding: 11px 16px
+            .number-block
+                display: flex
+                position: relative
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                background-image: url(/src/assets/images/icons/dashed-gorizontal.svg)
+                background-position-y: center
+                background-repeat: repeat-x
+                .module
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 55px
+                    height: 55px
+                    background-color: #040b1d
+                    .text
+                        font-weight: 300
+                        font-size: 32px
+                        line-height: 56px
+                        color: #FFFFFF
+            .action-1
+                grid-area: action-1
+            .number-1
+                .bg-block
+                    display: block
+                    position: absolute
+                    width: 100%
+                    height: 50%
+                    top: 50%
+                    background-image: url(/src/assets/images/icons/dashed-vertical.svg)
+                    background-position: center
+                    background-position-y: 50px
+                    background-repeat: repeat-y
+            .action-2
+                grid-area: action-2
+            .action-3
+                grid-area: action-3
+            .number-2
+                grid-area: number-2
+                .bg-block
+                    display: block
+                    position: absolute
+                    width: 100%
+                    height: 50%
+                    bottom: 50%
+                    background-image: url(/src/assets/images/icons/dashed-vertical.svg)
+                    background-position: center
+                    background-position-y: 50px
+                    background-repeat: repeat-y
+            .action-4
+                grid-area: action-4
