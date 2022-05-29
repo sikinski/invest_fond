@@ -84,3 +84,94 @@
                     background-repeat: repeat-y
             .action-4
                 grid-area: action-4
+@media (max-width: $breakpoint-middle-pc)
+    .action
+        padding: 67px 0
+        .inner-block
+            .content
+                grid-template-rows: 45% auto 75%
+                .button-container
+                    .button-disabled
+                        max-width: 220px
+                        height: 45px
+                        font-size: 14px
+                        line-height: 18px
+                .number-block
+                    .module
+                        width: 45px
+                        height: 45px
+                        .text
+                            font-size: 28px
+                            line-height: 42px
+                .action-text-container
+                    .module
+                        .text
+                            font-size: 14px
+                            line-height: 18px
+@media (max-width: $breakpoint-small-pc)
+    .action
+        padding: 67px 0
+        .inner-block
+            .content
+                grid-template-rows: 40% auto 70%
+                .button-container
+                    .button-disabled
+                        max-width: 220px
+                        height: 45px
+                        font-size: 14px
+                        line-height: 18px
+                .number-block
+                    .module
+                        width: 40px
+                        height: 40px
+                        .text
+                            font-size: 24px
+                            line-height: 36px
+                .action-text-container
+                    .module
+                        .text
+                            font-size: 12px
+                            line-height: 14px
+@media (max-width: $breakpoint-tablet)
+    .action
+        padding: 67px 0
+        .inner-block
+            padding: 0
+            .content
+                display: flex
+                flex-direction: column
+                .button-container
+                    .button-disabled
+                        max-width: 229px
+                        height: 45px
+                        font-size: 14px
+                        line-height: 20px
+                        margin: 40px 0
+                .number-block
+                    display: none
+                .action-text-container
+                    margin-bottom: 25px
+                    .module
+                        .text
+                            font-size: 16px
+                            line-height: 22px
+@media (max-width: $breakpoint-mobile-large)
+    .action
+        padding: 0
+        .inner-block
+            padding: 0
+            .content
+                .button-container
+                    .button-disabled
+                        max-width: 229px
+                        height: 45px
+                        font-size: 14px
+                        line-height: 20px
+                        margin: 0
+                        margin-bottom: 20px
+                .action-text-container
+                    margin-bottom: 25px
+                    .module
+                        .text
+                            font-size: 14px
+                            line-height: 20px

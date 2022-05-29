@@ -149,13 +149,29 @@ body
                     line-height: 26px
         .text-lines
             &::before
-                left: -60px
+                left: -50px
             &::after
-                right: -60px
+                right: -50px
 @media (max-width: $breakpoint-small-pc)
     .inner-block
         max-width: 100%
         padding: 0 60px
+        .text-lines
+            &::before
+                width: 40px
+                left: -45px
+            &::after
+                width: 40px
+                right: -45px
+@media (max-width: $breakpoint-tablet)
+    .inner-block
+        .text-lines
+            &::before
+                width: 30px
+                left: -40px
+            &::after
+                width: 30px
+                right: -40px
 @media (max-width: $breakpoint-mobile-large)
     .inner-block
         max-width: 100%
