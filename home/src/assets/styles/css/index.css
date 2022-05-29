@@ -341,13 +341,13 @@ body {
   }
 }
 @media (max-width: 720px) {
-  .main .term .inner-block .text-container .module .text {
+  .inner-block .text-container .module .text {
     font-size: 18px;
     line-height: 20px;
   }
 }
 @media (max-width: 428px) {
-  .main .term .inner-block .text-container .module .text {
+  .inner-block .text-container .module .text {
     font-size: 15px;
     line-height: 25px;
   }
@@ -659,10 +659,12 @@ body {
     max-width: 100%;
   }
   .main .term .inner-block .text-container {
-    height: 204px;
     padding: 13px;
     height: auto;
     margin: 0 9px 0 5px;
+  }
+  .main .term .inner-block .text-container .module .text {
+    padding: 13px 0;
   }
   .main .term .inner-block .text-container-1 {
     margin-top: 46px;
@@ -733,13 +735,14 @@ body {
 .about .inner-block .content .text-container-1 {
   grid-area: text-1;
   margin-left: -10%;
-  margin-top: 40px;
+  margin-top: 34px;
 }
-.about .inner-block .content .one-icon {
+.about .inner-block .content .right-icons {
+  display: flex;
   grid-area: icon;
   align-self: end;
 }
-.about .inner-block .content .one-icon .module .icon {
+.about .inner-block .content .right-icons .module .icon {
   width: 120px;
 }
 .about .inner-block .content .text-container-2 {
@@ -756,9 +759,14 @@ body {
 }
 .about .inner-block .content .text-container-3 .module .nav-buttons {
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 24px;
 }
 .about .inner-block .content .text-container-3 .module .nav-buttons .nav-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   width: 15px;
   height: 15px;
@@ -777,6 +785,8 @@ body {
 }
 .about .inner-block .content .text-container-3 .module .nav-buttons .active-nav-button svg {
   width: 100%;
+  max-width: 100%;
+  max-height: 100%;
   height: 100%;
 }
 .about .inner-block .content .text-container-3 .module .nav-buttons .active-nav-button svg .outer-circle {
@@ -788,6 +798,7 @@ body {
 }
 .about .inner-block .content .section-image-container {
   display: flex;
+  align-items: center;
   justify-content: flex-end;
   width: 135%;
   grid-area: image;
@@ -797,6 +808,254 @@ body {
   max-width: 523px;
   max-height: 326px;
   height: auto;
+}
+
+.about .inner-block .content {
+  margin-top: 43px;
+  grid-template-columns: 30% auto auto;
+}
+.about .inner-block .content .icons-group {
+  margin-top: 24px;
+}
+.about .inner-block .content .icon-wrapper {
+  width: 120px;
+  height: 80px;
+}
+.about .inner-block .content .icon-wrapper .module .icon {
+  width: 100px;
+  margin-top: -10px;
+}
+.about .inner-block .content .text-container .module {
+  padding: 20px 19px;
+}
+.about .inner-block .content .text-container-1 {
+  margin-top: 24px;
+}
+.about .inner-block .content .right-icons .module .icon {
+  width: 100px;
+}
+.about .inner-block .content .text-container-3 {
+  margin-top: 48px;
+  margin-left: 0;
+}
+.about .inner-block .content .text-container-3 .module .nav-buttons {
+  margin-top: 18px;
+}
+.about .inner-block .content .text-container-3 .module .nav-buttons .nav-button {
+  width: 12px;
+  height: 12px;
+}
+.about .inner-block .content .text-container-3 .module .nav-buttons .active-nav-button {
+  width: 18px;
+  height: 18px;
+}
+.about .inner-block .content .section-image-container {
+  margin-top: 48px;
+  justify-content: center;
+  transform: translate(25%, 0);
+}
+.about .inner-block .content .section-image-container .section-image {
+  max-width: 353px;
+  max-height: 256px;
+}
+
+.about .inner-block .content {
+  margin-top: 33px;
+  grid-template-columns: 25% auto auto;
+}
+.about .inner-block .content .icons-group {
+  margin-top: 20px;
+}
+.about .inner-block .content .icon-wrapper {
+  width: 110px;
+  height: 75px;
+}
+.about .inner-block .content .icon-wrapper .module .icon {
+  width: 90px;
+  margin-top: -5px;
+}
+.about .inner-block .content .text-container-1 {
+  margin-top: 20px;
+}
+.about .inner-block .content .right-icons .module .icon {
+  width: 90px;
+}
+.about .inner-block .content .text-container-3 {
+  margin-top: 30px;
+  margin-left: 10%;
+}
+.about .inner-block .content .text-container-3 .module .nav-buttons {
+  margin-top: 28px;
+}
+.about .inner-block .content .text-container-3 .module .nav-buttons .nav-button {
+  width: 10px;
+  height: 10px;
+}
+.about .inner-block .content .text-container-3 .module .nav-buttons .active-nav-button {
+  width: 16px;
+  height: 16px;
+}
+.about .inner-block .content .section-image-container {
+  margin-top: 30px;
+  transform: translate(15%, 0);
+}
+.about .inner-block .content .section-image-container .section-image {
+  max-width: 333px;
+  max-height: 256px;
+}
+
+@media (max-width: 720px) {
+  .about .inner-block {
+    padding: 0;
+  }
+  .about .inner-block .content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 53px;
+    padding: 0;
+    grid-template-columns: 25% auto auto;
+  }
+  .about .inner-block .content .icons-group {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0;
+    margin: 15px 0;
+  }
+  .about .inner-block .content .icons-group .tiktok-wrapper {
+    margin-top: 35px;
+  }
+  .about .inner-block .content .icons-group .icon-wrapper {
+    position: relative;
+  }
+  .about .inner-block .content .icons-group .twitter-wrapper {
+    display: none;
+  }
+  .about .inner-block .content .icons-group .instagram-wrapper {
+    position: relative;
+    left: 0;
+    right: 0;
+    transform: translate(0);
+    margin: 0;
+    margin-top: -35px;
+  }
+  .about .inner-block .content .icon-wrapper {
+    width: 140px;
+    height: 100px;
+  }
+  .about .inner-block .content .icon-wrapper .module .icon {
+    width: 110px;
+    margin-top: -5px;
+  }
+  .about .inner-block .content .text-container {
+    width: 100%;
+    margin: 0;
+    margin: 10px 0;
+  }
+  .about .inner-block .content .right-icons {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px 0;
+    align-self: auto;
+  }
+  .about .inner-block .content .right-icons .icon-wrapper {
+    width: 140px;
+    height: 100px;
+  }
+  .about .inner-block .content .right-icons .icon-wrapper .module .icon {
+    width: 110px;
+  }
+  .about .inner-block .content .right-icons .meta-wrapper {
+    margin-top: -35px;
+  }
+  .about .inner-block .content .right-icons .meta-wrapper .module .icon {
+    width: 110px;
+  }
+  .about .inner-block .content .right-icons .twitter-wrapper {
+    display: block;
+    margin-top: 35px;
+  }
+  .about .inner-block .content .text-container-3 .module .nav-buttons {
+    margin-top: 28px;
+  }
+  .about .inner-block .content .text-container-3 .module .nav-buttons .nav-button {
+    width: 10px;
+    height: 10px;
+  }
+  .about .inner-block .content .text-container-3 .module .nav-buttons .active-nav-button {
+    width: 16px;
+    height: 16px;
+  }
+  .about .inner-block .content .section-image-container {
+    margin-top: 30px;
+    width: 100%;
+    transform: translate(0);
+  }
+  .about .inner-block .content .section-image-container .section-image {
+    max-width: 333px;
+    max-height: 256px;
+  }
+}
+@media (max-width: 428px) {
+  .about .inner-block .content {
+    align-items: center;
+    margin-top: 15px;
+  }
+  .about .inner-block .content .icons-group {
+    justify-content: center;
+    margin: 14px 0;
+  }
+  .about .inner-block .content .icons-group .icon-wrapper {
+    width: 105px;
+    padding: 0;
+    height: 80px;
+    margin: 0;
+    margin: 0 13px;
+  }
+  .about .inner-block .content .icons-group .icon-wrapper .module .icon {
+    margin: 0;
+    margin-top: -26px;
+    width: 110px;
+  }
+  .about .inner-block .content .icons-group .instagram-wrapper {
+    margin-top: -35px;
+  }
+  .about .inner-block .content .icons-group .tiktok-wrapper {
+    margin-top: 35px;
+  }
+  .about .inner-block .content .right-icons .icon-wrapper {
+    width: 105px;
+    padding: 0;
+    height: 80px;
+    margin: 0;
+    margin: 0 13px;
+  }
+  .about .inner-block .content .right-icons .icon-wrapper .module .icon {
+    margin: 0;
+    margin-top: -26px;
+    width: 110px;
+  }
+  .about .inner-block .content .right-icons .meta-wrapper {
+    margin-top: -35px;
+  }
+  .about .inner-block .content .right-icons .twitter-wrapper {
+    margin-top: 35px;
+  }
+  .about .inner-block .content .text-container {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    margin: 0 9px 0 5px;
+  }
+  .about .inner-block .content .section-image-container {
+    margin-top: 59px;
+  }
+  .about .inner-block .content .text-container {
+    margin: 20px 0;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
