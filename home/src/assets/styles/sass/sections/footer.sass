@@ -1,0 +1,243 @@
+.footer
+    .inner-block
+        .main-content
+            display: flex
+            justify-content: space-between
+            padding: 31px 50px
+            .left-col
+                display: flex
+                flex-direction: column
+                .contacts
+                    display: flex
+                    flex-direction: column
+                    margin: 15px 0
+                    .contact
+                        display: flex
+                        align-items: center
+                        font-family: 'Montserrat'
+                        font-weight: 300
+                        font-size: 16px
+                        line-height: 56px
+                        color: #FFFFFF
+                        .icon
+                            display: block
+                            margin: 0 8px
+                            background-size: contain
+                        .location
+                            background-image: url(/src/assets/images/icons/gps.svg)
+                            width: 18px
+                            height: 18px
+                        .phone
+                            background-image: url(/src/assets/images/icons/phone.svg)
+                            width: 16px
+                            height: 16px
+                        .mail
+                            background-image: url(/src/assets/images/icons/mail.svg)
+                            width: 16px
+                            height: 13px
+                .socials
+                    display: flex
+                    .social
+                        border-radius: 50%
+                        width: 31px
+                        height: 31px
+                        margin: 0 7px
+                        border: 1px solid rgba(255,255,255,0.3)
+                    .twitter
+                        background-image: url(/src/assets/images/icons/twitter-footer.svg)
+                    .facebook
+                        background-image: url(/src/assets/images/icons/facebook-footer.svg)
+                    .instagram
+                        background-image: url(/src/assets/images/icons/instagram-footer.svg)
+            .right-col
+                display: grid
+                grid-template-columns: 1fr 1fr
+                grid-template-rows: auto
+                grid-gap: 0 25px
+                padding: 15px 0
+                .footer-link
+                    font-family: 'Montserrat'
+                    font-weight: 300
+                    font-size: 16px
+                    min-width: 130px
+                    &:hover
+                        font-weight: 700
+        .under-footer
+            display: flex
+            justify-content: space-between
+            align-items: center
+            font-family: 'Montserrat'
+            padding: 15px 0
+            .date
+                font-weight: 300
+                font-size: 16px
+                line-height: 56px
+            .documents
+                .document-link
+                    padding: 0 18px
+                    font-weight: 300
+                    font-size: 14px
+                    line-height: 56px
+@media (max-width: $breakpoint-middle-pc)
+    .footer
+        .inner-block
+            .main-content
+                padding: 20px 30px
+                .left-col
+                    .contacts
+                        margin: 10px 0
+                        .contact
+                            font-size: 14px
+                            line-height: 36px
+                            .icon
+                                width: 15px
+                                height: 15px
+                        .socials
+                            .social
+                                width: 26px
+                                height: 26px
+                .right-col
+                    grid-gap: 10px 20px
+                    padding: 10px 0
+                    .footer-link
+                        min-width: 100px
+                        font-size: 14px
+                        line-height: 26px
+            .under-footer
+                padding: 25px 0
+                .date
+                    font-size: 14px
+                    line-height: 26px
+                .documents
+                    .document-link
+                        padding: 0 13px
+                        font-size: 12px
+                        line-height: 26px
+@media (max-width: $breakpoint-small-pc)
+    .footer
+        .inner-block
+            .main-content
+                padding: 10px 0
+                .left-col
+                    .contacts
+                        margin: 10px 0
+                        .contact
+                            font-size: 12px
+                            line-height: 28px
+                            .icon
+                                width: 13px
+                                height: 13px
+                .right-col
+                    grid-gap: 5px 10px
+                    padding: 5px 0
+                    .footer-link
+                        min-width: 80px
+                        font-size: 12px
+                        line-height: 20px
+            .under-footer
+                padding: 15px 0
+                .date
+                    font-size: 12px
+                    line-height: 20px
+                .documents
+                    .document-link
+                        padding: 0 9px
+                        font-size: 10px
+                        line-height: 20px
+@media (max-width: $breakpoint-tablet)
+    .footer
+        .inner-block
+            padding: 0 35px
+            .main-content
+                .left-col
+                    .contacts
+                        margin: 0
+                        .contact
+                            font-size: 12px
+                            line-height: 18px
+                            margin: 0
+                            .icon
+                                width: 13px
+                                height: 13px
+                    .socials
+                        margin: 25px 0
+                .right-col
+                    grid-gap: 0
+                    padding-bottom: 15px
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+                    .footer-link
+                        min-width: 80px
+                        font-size: 12px
+                        line-height: 20px
+                    .footer-link-6, .footer-link-7, .footer-link-8, .footer-link-9, .footer-link-10
+                        display: none
+            .under-footer
+                padding: 15px 0
+                .date
+                    font-size: 10px
+                    line-height: 16px
+                .documents
+                    .document-link
+                        padding: 0 9px
+                        font-size: 9px
+                        line-height: 16px
+@media (max-width: $breakpoint-mobile-large)
+    .footer
+        .inner-block
+            padding: 0 34px
+            .main-content
+                padding: 35px 0
+                .left-col
+                    .contacts
+                        .contact
+                            font-weight: 300
+                            margin: 10px 0
+                            font-size: 16px
+                            line-height: 20px
+                    .socials
+                        margin: 25px 0
+                .right-col
+                    padding-bottom: 0
+                    .footer-link
+                        min-width: 100px
+                        font-weight: 300
+                        font-size: 16px
+                        line-height: 20px
+            .under-footer
+                padding: 15px 0
+                align-items: baseline
+                .date
+                    font-weight: 300
+                    font-size: 16px
+                    line-height: 36px
+                .documents
+                    text-align: right
+                    .document-link
+                        padding: 0 9px
+                        font-weight: 300
+                        font-size: 14px
+                        line-height: 20px
+@media (min-width: $breakpoint-mobile-small) and (max-width: $breakpoint-mobile-large - 10px)
+    .footer
+        .inner-block
+            .main-content
+                .left-col
+                    .contacts
+                        .contact
+                            font-size: 14px
+                            line-height: 18px
+                .right-col
+                    .footer-link
+                        font-size: 14px
+                        line-height: 18px
+            .under-footer
+                padding: 15px 0
+                .date
+                    font-size: 14px
+                    line-height: 24px
+                .documents
+                    .document-link
+                        font-size: 12px
+                        line-height: 18px
